@@ -1,0 +1,196 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+  <span class="logo-ring">
+    <span class="logo-mark">GD</span>
+  </span>
+  <span class="logo-name">Great Dike</span>
+</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+  <div class="hero-bg">
+    <img src="https://i.postimg.cc/FzHkbJr1/IMG-20260805-093918-060.jpg" alt="Great Dike" class="hero-bg-img">
+  </div>
+  <div class="hero-content">
+    <h1>Hello dear, I'm <span>Great Dike</span></h1>
+    <p>Web developer & builder — here's a bit about me and my work.</p>
+    <a href="#projects" class="btn">See my work</a>
+  </div>
+</section>
+
+  <section id="about" class="about">
+  <div class="about-panel">
+    <div class="about-bg"></div>
+    <div class="about-heading">
+      <span class="about-ghost">ABOUT</span>
+      <h2>About Me</h2>
+    </div>
+    <p class="about-text">
+      <span class="typed-output" data-text="I build things that live at the intersection of clean code and thoughtful design — turning half-formed ideas into interfaces people actually enjoy using. I'd rather spend an extra hour perfecting a detail than ship something forgettable, and that instinct shows in everything from a dashboard's first render to a button's last pixel of padding."></span><span class="typed-cursor">_</span>
+    </p>
+  </div>
+</section>
+  <section id="stats" class="stats">
+  <div class="stat-grid">
+    <div class="stat">
+      <h3 class="stat-number" data-target="48" data-suffix="+">48</h3>
+      <p class="stat-label">Satisfied Clients</p>
+    </div>
+    <div class="stat">
+      <h3 class="stat-number" data-target="24" data-suffix="+">24</h3>
+      <p class="stat-label">Projects Completed</p>
+    </div>
+    <div class="stat">
+      <h3 class="stat-number" data-target="86" data-suffix="%">86%</h3>
+      <p class="stat-label">Client Satisfaction Rate</p>
+    </div>
+  </div>
+</section>
+
+  <section id="projects" class="projects">
+    <h2>projects</h2>
+<div class="project-carousel" id="projectCarousel">
+  <div class="project-track" id="projectTrack">
+
+    <div class="project-slide">
+      <div class="project-cover"><h3 class="project-title">PulseBoard</h3><button class="more-btn" type="button">More</button></div>
+      <div class="project-details">
+        <p>A real-time analytics dashboard that pulls live data streams and renders them as clean, interactive charts. Built with a focus on speed — sub-second updates even under heavy load.</p>
+        <a href="#">View project →</a>
+      </div>
+    </div>
+
+    <div class="project-slide">
+      <div class="project-cover"><h3 class="project-title">EchoNotes</h3><button class="more-btn" type="button">More</button></div>
+      <div class="project-details">
+        <p>An AI-powered note-taking app that transcribes voice memos and auto-organizes them into searchable, tagged summaries. Designed to disappear into your workflow, not interrupt it.</p>
+        <a href="#">View project →</a>
+      </div>
+    </div>
+
+    <div class="project-slide">
+      <div class="project-cover"><h3 class="project-title">Driftly</h3><button class="more-btn" type="button">More</button></div>
+      <div class="project-details">
+        <p>A minimalist e-commerce storefront with a custom cart experience and smooth checkout flow, built to convert browsers into buyers without the usual friction.</p>
+        <a href="#">View project →</a>
+      </div>
+    </div>
+
+    <div class="project-slide">
+      <div class="project-cover"><h3 class="project-title">VaultTrack</h3><button class="more-btn" type="button">More</button></div>
+      <div class="project-details">
+        <p>A personal finance app that syncs multiple accounts and visualizes spending patterns with interactive category breakdowns, plus budget alerts and a savings-goal tracker.</p>
+        <a href="#">View project →</a>
+      </div>
+    </div>
+
+    <div class="project-slide">
+      <div class="project-cover"><h3 class="project-title">Nimbus AI</h3><button class="more-btn" type="button">More</button></div>
+      <div class="project-details">
+        <p>A browser-based writing assistant that suggests edits, tone shifts, and rewrites inline — powered by a lightweight LLM integration, cutting editing time by more than half.</p>
+        <a href="#">View project →</a>
+      </div>
+    </div>
+
+    <div class="project-slide">
+      <div class="project-cover"><h3 class="project-title">Threadly</h3><button class="more-btn" type="button">More</button></div>
+      <div class="project-details">
+        <p>A social scheduling and analytics tool for creators managing multiple platforms, with a drag-and-drop content calendar and unified engagement dashboard.</p>
+        <a href="#">View project →</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="carousel-dots" id="carouselDots"></div>
+  </section>
+  <section id="order" class="order">
+  <h2>Let's Build Something</h2>
+  <p class="order-intro">Tell me what you need — I'll get back to you.</p>
+
+  <div class="order-panel">
+    <form class="order-form" id="orderForm">
+      <div class="field">
+        <label for="clientName">Your Name</label>
+        <input type="text" id="clientName" placeholder="e.g. Sarah Johnson" required>
+      </div>
+
+      <div class="field">
+        <label for="orderDetails">What do you need?</label>
+        <div class="textarea-wrap">
+          <textarea id="orderDetails" rows="4" placeholder="Describe the website you want built..." required></textarea>
+          <button type="button" id="micBtn" class="mic-btn" aria-label="Speak your message">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3Z"/>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+              <line x1="12" y1="19" x2="12" y2="23"/>
+              <line x1="8" y1="23" x2="16" y2="23"/>
+            </svg>
+            <span class="mic-pulse"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="order-actions">
+        <button type="button" id="sendWhatsapp" class="btn btn-fill">Send via WhatsApp</button>
+        <button type="button" id="sendEmail" class="btn">Send via Email</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Get in touch</h2>
+  <p>Contact me on my various socials<a href=""></a></p>
+
+  <div class="social-links">
+    <a href="https://facebook.com/yourusername" target="_blank" rel="noopener" class="social-btn" data-label="Facebook">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+      </svg>
+    </a>
+
+    <a href="https://wa.me/23407040349646" target="_blank" rel="noopener" class="social-btn" data-label="WhatsApp">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+      </svg>
+    </a>
+
+    <a href="https://t.me/yourusername" target="_blank" rel="noopener" class="social-btn" data-label="Telegram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m22 2-7 20-4-9-9-4Z"/>
+        <path d="M22 2 11 13"/>
+      </svg>
+    </a>
+
+    <a href="mailto: fideliaijeoma63@gmail.com" class="social-btn" data-label="Email">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Z"/>
+        <path d="m22 6-10 7L2 6"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Great Dike</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
